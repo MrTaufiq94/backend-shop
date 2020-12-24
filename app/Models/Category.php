@@ -28,4 +28,14 @@ class Category extends Model
     {
         return asset('storage/categories/' . $image);
     }
+
+    /**
+     * products
+     *
+     * @return void
+     */
+    public function products()
+    {
+        return $this->hasMany(Product::class);
+    }
 }

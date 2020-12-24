@@ -28,4 +28,24 @@ class Product extends Model
     {
         return asset('storage/products/' . $image);
     }
+
+    /**
+     * category
+     *
+     * @return void
+     */
+    public function category()
+    {
+        return $this->belongsTo(Category::class);
+    }
+
+    /**
+     * carts
+     *
+     * @return void
+     */
+    public function carts()
+    {
+        return $this->hasMany(Cart::class);
+    }
 }
