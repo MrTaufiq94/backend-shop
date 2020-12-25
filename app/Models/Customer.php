@@ -38,4 +38,14 @@ class Customer extends Authenticatable
     {
         return $this->hasMany(Invoice::class);
     }
+
+    /**
+     * carts
+     *
+     * @return void
+     */
+    public function carts()
+    {
+        return $this->hasMany(Cart::class);
+    }
 }
