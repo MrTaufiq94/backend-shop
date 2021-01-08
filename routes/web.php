@@ -1,6 +1,8 @@
 <?php
 
-// use Auth;
+namespace App\Http\Controllers\Admin;
+
+use Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -33,7 +35,7 @@ Route::prefix('admin')->group(function () {
     Route::group(['middleware' => 'auth'], function() {
         
         //route dashboard
-        Route::get('/dashboard', [App\Http\Controllers\Admin\DashboardController::class, 'index'])->name('admin.dashboard.index');
+        Route::get('/dashboard', [DashboardController::class, 'index'])->name('admin.dashboard.index');
 
         //route category
         Route::resource('/category', CategoryController::class, ['as' => 'admin']);
