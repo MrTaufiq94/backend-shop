@@ -96,7 +96,7 @@
         <div id="collapseTwo" class="collapse {{ Request::is('admin/category*') ? ' show' :  '' }} {{ Request::is('admin/product*') ? ' show' :  '' }}" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">KATEGORI & PRODUK</h6>
-            <a class="collapse-item {{ Request::is('admin/category*') ? ' active' : '' }}" href="#">KATEGORI</a>
+            <a class="collapse-item {{ Request::is('admin/category*') ? ' active' : '' }}" href="{{ route('admin.category.index') }}">KATEGORI</a>
             <a class="collapse-item {{ Request::is('admin/product*') ? ' active' : '' }}" href="#">PRODUK</a>
           </div>
         </div>

@@ -34,5 +34,8 @@ Route::prefix('admin')->group(function () {
         
         //route dashboard
         Route::get('/dashboard', [App\Http\Controllers\Admin\DashboardController::class, 'index'])->name('admin.dashboard.index');
+
+        //route category
+        Route::resource('/category', CategoryController::class, ['as' => 'admin']);
     });
 });
