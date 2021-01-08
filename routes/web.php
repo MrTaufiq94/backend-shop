@@ -1,5 +1,6 @@
 <?php
 
+// use Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,12 +15,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect()->route('admin.dashboard.index');
 });
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+//Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 /**
  * route for admin
@@ -27,7 +28,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 //group route with prefix "admin"
 Route::prefix('admin')->group(function () {
-
+    
     //group route with middleware "auth"
     Route::group(['middleware' => 'auth'], function() {
         

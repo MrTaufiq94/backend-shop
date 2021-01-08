@@ -8,7 +8,7 @@ if (! function_exists('moneyFormat')) {
      * @return void
      */
     function moneyFormat($str) {
-        return 'Rp. ' . number_format($str, '0', '', '.');
+        return 'RM. ' . number_format($str, '0', '', '.');
     }
 }
 
