@@ -1,4 +1,4 @@
-@extends('layouts.app', ['title' => 'Tambah Produk'])
+@extends('admin.layouts.app', ['title' => 'Tambah Produk'])
 
 @section('content')
 <!-- Begin Page Content -->
