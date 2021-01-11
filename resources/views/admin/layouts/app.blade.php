@@ -107,7 +107,7 @@
       </div>
 
       <li class="nav-item {{ Request::is('admin/order*') ? ' active' :  '' }}">
-        <a class="nav-link" href="#">
+        <a class="nav-link" href="{{ route('admin.order.index') }}">
           <i class="fas fa-shopping-cart"></i>
           <span>ORDERS</span></a>
       </li>
