@@ -119,7 +119,7 @@
       </li>
 
       <li class="nav-item {{ Request::is('admin/slider*') ? ' active' :  '' }}">
-        <a class="nav-link" href="#">
+        <a class="nav-link" href="{{ route('admin.slider.index') }}">
           <i class="fas fa-laptop"></i>
           <span>SLIDERS</span></a>
       </li>
