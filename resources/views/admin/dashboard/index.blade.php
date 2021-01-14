@@ -1,4 +1,4 @@
-@extends('admin/layouts.app', ['title' => 'Dashboard'])
+@extends('admin.layouts.app', ['title' => 'Dashboard'])
 
 @section('content')
 <div class="container-fluid">
