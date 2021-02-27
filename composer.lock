@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a7fe710b52a35434de28c5503e5cf522",
+    "content-hash": "bd78ae36042ef63d1a008277cd556c8d",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -5088,6 +5088,57 @@
                 }
             ],
             "time": "2020-12-16T17:02:19+00:00"
+        },
+        {
+            "name": "tarsoft/toyyibpay",
+            "version": "0.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tarsofttech/toyyibpay-laravel.git",
+                "reference": "75f2cee522cf9aa6898e7bf7a53709a5f0618817"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tarsofttech/toyyibpay-laravel/zipball/75f2cee522cf9aa6898e7bf7a53709a5f0618817",
+                "reference": "75f2cee522cf9aa6898e7bf7a53709a5f0618817",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "^6.3|^7.0.1",
+                "illuminate/support": "5.5.*|5.6.*|5.7.*|5.8.*|^6.0|^7.0|^8.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Tarsoft\\Toyyibpay\\ToyyibpayServiceProvider"
+                    ],
+                    "aliases": {
+                        "Toyyibpay": "Tarsoft\\Toyyibpay\\ToyyibpayFacade"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Tarsoft\\Toyyibpay\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "MUHAMMAD TARMIZI SANUSI AFKAR",
+                    "email": "realtarmizisanusi@gmail.com"
+                }
+            ],
+            "description": "Laravel Package for ToyyibPay API",
+            "support": {
+                "issues": "https://github.com/tarsofttech/toyyibpay-laravel/issues",
+                "source": "https://github.com/tarsofttech/toyyibpay-laravel/tree/0.1.1"
+            },
+            "time": "2021-02-21T16:29:53+00:00"
         },
         {
             "name": "tijsverkoyen/css-to-inline-styles",

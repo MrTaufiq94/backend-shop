@@ -176,6 +176,8 @@ return [
         App\Providers\RouteServiceProvider::class,
         App\Providers\FortifyServiceProvider::class,
 
+        Tarsoft\Toyyibpay\ToyyibpayServiceProvider::class,
+
     ],
 
     /*
@@ -227,6 +229,8 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
+
+        'Toyyibpay' => Tarsoft\Toyyibpay\ToyyibpayFacade::class,
 
     ],
 
